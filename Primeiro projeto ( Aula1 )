@@ -4,6 +4,7 @@ namespace PrimeiroProjeto2
     {
         static void Main(string[] args)
         {
+            /*
             double n1, n2, n3, media;
             Console.WriteLine("Atribuindo 3 notas para o aluno");
             n1 = 7.5;
@@ -29,7 +30,17 @@ namespace PrimeiroProjeto2
             Console.WriteLine("i = " + i);
             i = i + 3;
             Console.WriteLine("i = " + i);
+            */
 
+            int numero;
+            Console.WriteLine("Digite um valor:");
+            numero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Foi digitado:" +numero);
+
+            double numero2;
+            Console.WriteLine("Agora, um valor com virgula:");
+            numero2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Foi digitado:" + numero2);
         }
     }
 }
