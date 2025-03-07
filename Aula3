@@ -1,0 +1,29 @@
+namespace OperaçãoMatemática
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+            /*faça a leitura de dois double 
+             * faça as 4 operações matemáticas 
+             */
+        {
+            int x;
+            double n1, n2, soma, subtracao, multiplicacao, divisao;
+            char resultado;
+
+            // Leitura e exibição do número inteiro
+            Console.WriteLine("Digite um número inteiro:");
+            n1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um segundo número:");
+            n2 = double.Parse(Console.ReadLine());
+            soma = n1+ n2;
+            Console.WriteLine(n1 + "+" + n2 + "=" + soma);
+            subtracao = n1 - n2;
+            Console.WriteLine(n1 + "-" + n2 + "=" + subtracao);
+            multiplicacao = n1 * n2;
+            Console.WriteLine(n1 + "x" + n2 + "=" + multiplicacao);
+            divisao = n1 / n2;
+            Console.WriteLine(n1 + "/" + n2 + "=" + divisao);
+        }
+    }
+}
