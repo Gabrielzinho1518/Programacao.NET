@@ -8,21 +8,13 @@ namespace NumeroNegativo
             Console.WriteLine("Digite um numero:");
             num = int.Parse(Console.ReadLine());
 
-            if (num % 2 == 0)
+            if (num % 2 == 0 && num % 3 == 0 && num % 4 == 0)
             {
-                Console.WriteLine("É dívisivel por 2!");
-            }
-            if (num % 4 == 0)
-            {
-                Console.WriteLine("É divisivel por 4!");
-            }
-            if (num % 8 == 0)
-            {
-                Console.WriteLine("É divisivel por 8!");
+                Console.WriteLine("É dívisivel por 2,3,4 ao mesmo tempo");
             }
             else
             {
-                Console.WriteLine("Não é divisivel por 2!");
+                Console.WriteLine("Não é divisivel por 2, ou 3 ou 4");
             }
         }
     }
