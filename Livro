@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Projeto
+{ 
+    public class Livro
+    {
+        String titulo;
+        String autor;
+        int anoDePublicacao;
+
+        public void exibirInformacoes()
+        {
+            Console.WriteLine("Título: " + titulo);
+            Console.WriteLine("Autor: " + autor);
+            Console.WriteLine("Ano de Publicação: " + anoDePublicacao);
+        }
+        public static void main(String[] args)
+        {
+
+            Livro livro = new Livro();
+
+            Console.WriteLine("Digite o título do livro: ");
+            livro.titulo = Console.ReadLine();
+
+            Console.WriteLine("Digite o autor do livro: ");
+            livro.autor = Console.ReadLine();
+
+            Console.WriteLine("Digite o ano de publicação: ");
+            livro.anoDePublicacao = Console.ReadLine();
+
+            Console.WriteLine("Titulo do livro:" +livro.titulo);
+            Console.WriteLine("Autor do livro:" + livro.autor);
+            Console.WriteLine("Ano de fabricação do livro:" + livro.anoDePublicacao);
+
+        }
+    }
+
+}
